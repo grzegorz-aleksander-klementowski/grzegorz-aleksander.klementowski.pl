@@ -7,18 +7,27 @@
 		<meta name="description" content="Grzegorz Aleksander Klementowski - specjalista IT. Odkryj moje portfolio z programowania, zarządzania systemami informacyjnymi, procesami biznesowymi i projektami w języku Rust.">
 		<meta name="keywords" content="Grzegorz Aleksander Klementowski, IT portfolio, Programming expertise, MIS specialist, Business process management, Rust programmer">
 		<!-- CSS styles -->
-		<link rel="stylesheet" href="./css/main.css">
+		<link rel="stylesheet" href="./css/style.css">
 		<link rel="stylesheet" href="./css/nav.css">
 		<link rel="stylesheet" href="./css/header.css">
 		<!-- Java Script -->
+		<script src="./javascript/script.js" defer></script>
 		<!-- inne -->
 		<link rel="icon" href="sciezka/do/favicon.ico" type="image/x-icon">
 	</head>
 	<body>
-		<header>
+		<header class="index-section-1">
+			<video autoplay muted loop id="headerVideo">
+				<!-- src: https://www.youtube.com/watch?v=BadB1z-V_qU -->
+				<source src="./vid/bg-vid.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+			</video>
 			<nav>
 				<div class="nav-container">
-				  	<a href="#home" class="nav-logo">G. A. Klementowski</a>
+				  	<a href="#home" class="nav-logo">
+						<Span class="names">Grzegorz Aleksander</Span>
+						<span class="surname">Klementowski</span>
+					</a>
 				  	<div class="nav-links">
 						<a href="#about">About</a>
 						<a href="#portfolio">Portfolio</a>
@@ -59,36 +68,39 @@
 				  <button class="nav-toggle" aria-label="Otwórz nawigację">
 					<span class="hamburger"></span>
 				  </button>
-				</div>
-				<video autoplay muted loop id="headerVideo">
-					<source src="./vid/bg-vid.mp4" type="video/mp4">
-					Your browser does not support the video tag.
-				</video>
+				</div>				
 			</nav>
-			<div class="header-content">
-				<h1>We are creating future of Information Management</h1>
-				<div class="header-buttons">
+			<div class="header-hero">
+				<h1>Hi, I am Klementowski<br >We are creating future of Information Management Sytems</h1>
+			</div>
+			<div class="header-buttons">
 					<button onclick="location.href='#contact'" class="button">Contact</button>
 					<button onclick="location.href='#projects'" class="button">Projects</button>
-				</div>
 			</div>
 		</header>
 		
 		  <main>
-			<section class="presentation">
+			<section class="main-presentation index-section-2">
 			  <!-- Treść prezentacji, np. o mnie, moje doświadczenie -->
-			  <h2>naglowek</h2>
-			  <p>test</p>
+			  <div class="main-text-presentation">
+				<h2>Let me add value to your business</h2>
+			  	<p>Hello, I'm Grzegorz, an aspiring expert in the field of Information Management Systems. My educational path included studying at five universities in four different countries: the Czech Republic, Poland, Germany and England, mainly in English. I have strong international experience.</p>
+				<p>This experience not only broadened my horizons, but also allowed me to gain a global perspective in my field. I have worked on various projects that have significantly improved the functioning of both private and public organizations.</p>
+				<p>My passion drives me to constantly expand my knowledge, allowing me to explore the latest technologies, from blockchain to the latest achievements in the field of artificial intelligence. With each project, my skills and knowledge grow, allowing me to offer innovative and tailored solutions. Let's discover together how my expertise can contribute to achieving your business goals!</p>
+			  </div>
+			  <div class="main-picture-presentation">
+				<img src="./img/short-presentation.png" alt="picture-of-me">
+			  </div>
 			</section>
-			<section class="hero-skills">
+			<section class="hero-skills index-section-3">
 			  <!-- Wykaz umiejętności -->
 			</section>
-			<section class="curriculum-vitae">
+			<section class="curriculum-vitae index-section-4">
 			  <!-- Dokumentacja CV -->
 			</section>
 		  </main>
 		
-		  <footer>
+		  <footer class="footer-index index-section-5">
 			<!-- Informacje o prawach autorskich, linki do mediów społecznościowych, itd. -->
 		  </footer>
 	</body>
