@@ -1,0 +1,52 @@
+header {
+    position: relative;
+    overflow: hidden; /* Zapobiega wyświetlaniu się wideo poza headerem */
+  }
+  
+  #headerVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1; /* Upewnij się, że wideo jest pod innymi elementami */
+    object-fit: cover; /* Zapewnia pokrycie całego obszaru bez utraty proporcji */
+  }
+  
+  .nav-container,
+  .header-content {
+    position: relative;
+    z-index: 1; /* Upewnij się, że treść jest ponad wideo */
+  }
+  
+  .header-content h1 {
+    color: white; /* Zapewnia kontrast tekstowi na wideo */
+    text-align: center;
+    /* Dodaj inne style według potrzeb */
+  }
+  
+  .header-buttons {
+    text-align: center;
+    /* Dodaj inne style dla przycisków */
+  }
+  
+  .button {
+    background: #4e9f3d; /* styl przycisku */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    /* Dodaj inne style według potrzeb */
+  }
+  
+  .button:hover {
+    background: #367c2b; /* ciemniejszy odcień dla efektu hover */
+  }
+  
+  @media (max-width: 768px) {
+    /* ... Responsywność i inne style już zdefiniowane ... */
+  }
+  

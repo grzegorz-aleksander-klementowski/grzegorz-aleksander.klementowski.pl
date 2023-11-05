@@ -9,25 +9,12 @@ body {
   grid-template-rows: 100vh auto 100vh; /* `auto` dla main, żeby mógł się rozciągnąć */
   min-height: 100vh;
   overflow: hidden; /* Zapobiega przewijaniu całego ciała strony */
+
+  background-color: black;
 }
 
-header {
-  grid-area: header;
-  /* Pozostałe style dla header, bez konieczności ustawiania grid-template-areas */
-}
 
-nav {
-  /* Style dla nawigacji */
-}
 
-/* Jeśli masz różne sekcje w header */
-.header-section-1 {
-  /* Style dla sekcji 1 */
-}
-
-.header-section-2 {
-  /* Style dla sekcji 2 */
-}
 
 main {
   grid-area: main;
@@ -36,6 +23,10 @@ main {
 }
 
 /* Zdefiniowanie stylów dla poszczególnych sekcji w main */
+.main-section {
+  background: linear-gradient(to right, #000000, #0000ff);
+}
+
 main > section.presentation {
   /* Style dla sekcji prezentacji */
 }

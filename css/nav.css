@@ -1,0 +1,82 @@
+nav {
+    background:  transparent;/* #1a1a2e; ciemne tło */
+    color: #e7e7e7; /* jasny tekst */
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* lekki cień dla głębi */ */
+  }
+  
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    /* max-width: 1200px; */
+    height: 70px;
+    margin: 0 auto;
+  }
+  
+  .nav-logo {
+    font-size: 1.8rem;
+    color: #e7e7e7;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 20px;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .nav-links a {
+    color: #e7e7e7;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .nav-links a:hover {
+    color: #4e9f3d; /* jasnozielony kolor po najechaniu */
+  }
+  .nav-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2rem;
+    height: 1.5rem;
+  }
+  
+  .hamburger,
+  .hamburger::before,
+  .hamburger::after {
+    display: block;
+    background-color: #e7e7e7;
+    height: 2px;
+    width: 2rem;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .hamburger::before,
+  .hamburger::after {
+    content: "";
+    position: relative;
+  }
+  
+  .hamburger::before {
+    transform: translateY(-7px);
+  }
+  
+  .hamburger::after {
+    transform: translateY(5px);
+  }
+  
+  /* Responsywność - pokazuje menu hamburgerowe na mniejszych ekranach */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none; /* ukryj linki na małych ekranach */
+    }
+  
+    .nav-toggle {
+      display: flex; /* pokaż przycisk hamburgera */
+    }
+  }
+  
