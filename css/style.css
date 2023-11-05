@@ -1,3 +1,18 @@
+@font-face {
+  font-family: 'Dominik';
+  src: url('./fonts/DOMINIKTHi.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Playfair Display SC';
+  src: url('./fonts/Playfair_Display_SC/PlayfairDisplaySC-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 body {
   margin: 0;
   display: grid;
@@ -9,6 +24,8 @@ body {
   grid-template-rows: 100vh auto 100vh; /* `auto` dla main, żeby mógł się rozciągnąć */
   min-height: 100vh;
   background-color: black;
+  font-weight: 100;
+  
 }
 
 
@@ -43,7 +60,7 @@ main {
 }
 
 main .main-presentation {
-  animation: backgroundAnimation 10s infinite; /* Animacja trwa 10 sekund i jest nieskończona */
+  
 
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -52,15 +69,15 @@ main .main-presentation {
   justify-items: center;
   align-items: center;
   
-  
+  background: linear-gradient(to right, #000000, #000091);
 
 }
 
 .main-presentation > .main-text-presentation {
   grid-column: 1;
   color: #cecece;
-  text-align: justify;
-  margin: 20px 80px;
+
+  margin: 40px 80px;
   font-size: larger;
 }
 
@@ -70,17 +87,18 @@ main .main-presentation {
 }
 
 .main-picture-presentation img {
-  width: 40em;
+  width: 35em;
   height: auto;
 }
 
 main > section.hero-skills {
   /* Style dla sekcji umiejętności */
-  background: linear-gradient(to right, #000000, #000091);
+  
+  animation: backgroundAnimation 10s infinite; /* Animacja trwa 10 sekund i jest nieskończona */
 }
 
 main > section.curriculum-vitae {
-  /* Style dla sekcji CV */
+  background-color: #4545ff;
 }
 
 footer {

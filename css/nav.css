@@ -36,6 +36,7 @@ nav {
     flex-direction: column; 
     align-items: center; 
     text-decoration: none; 
+    font-family: 'Playfair Display SC', serif;
   }
   
   .nav-logo .names {
@@ -45,6 +46,7 @@ nav {
   
   .nav-logo .surname {
     font-size: 1.2em;
+    height: 10px;
   }
 
   .nav-links {
