@@ -1,7 +1,12 @@
 nav {
-    background:  transparent;/* #1a1a2e; ciemne tło */
-    color: #e7e7e7; /* jasny tekst */
-    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* lekki cień dla głębi */ */
+    background:  transparent;
+    color: #e7e7e7;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2; /* be sure nav is into the text and vid */
+    width: 100%;
   }
   
   .nav-container {
@@ -12,8 +17,11 @@ nav {
     /* max-width: 1200px; */
     height: 70px;
     margin: 0 auto;
+
+    
   }
   
+
   .nav-logo {
     font-size: 1.8rem;
     color: #e7e7e7;
@@ -22,6 +30,23 @@ nav {
     font-size: 20px;
   }
   
+/* logo text formating */
+.nav-logo {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-decoration: none; 
+  }
+  
+  .nav-logo .names {
+    font-size: 0.8em;
+    font-weight: normal;
+  }
+  
+  .nav-logo .surname {
+    font-size: 1.2em;
+  }
+
   .nav-links {
     display: flex;
     gap: 2rem;
