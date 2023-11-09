@@ -1,0 +1,57 @@
+
+@media screen and (max-width: 1800px) {
+    main .content-container {
+      margin: 0 5%; 
+    }
+  }
+
+
+  /* Styl dla ekranów w orientacji pionowej */
+@media screen and (orientation: portrait) {
+    /* Twoje style dla orientacji pionowej */
+  }
+  
+  /* Styl dla ekranów w orientacji poziomej */
+  @media screen and (orientation: landscape) {
+    /* Twoje style dla orientacji poziomej */
+  }
+
+  
+   /* Responsywność - pokazuje menu hamburgerowe na mniejszych ekranach */
+   @media (max-width: 768px) {
+
+
+
+    /* INDEX NAV */
+    .nav-links {
+      display: none; /* ukryj linki na małych ekranach */
+    }
+  
+    .nav-toggle {
+      display: flex; /* pokaż przycisk hamburgera */
+    }
+
+
+/* INDEX FOOTER */
+    .footer-index .contact {
+      grid-template-columns: 1fr; /* One column layout for mobile */
+    }
+  
+    .footer-about,
+    .footer-contact,
+    .footer-social {
+      text-align: center;
+      margin-bottom: 20px; /* Add margin for spacing between the sections */
+    }
+  
+    .footer-social ul {
+      display: flex;
+      justify-content: center;
+    }
+  
+    .footer-social li {
+      margin: 0 10px;
+    }
+  }
+  
+ 

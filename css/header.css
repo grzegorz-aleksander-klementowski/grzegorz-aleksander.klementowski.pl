@@ -1,4 +1,9 @@
-
+@font-face {
+  font-family: 'Playfair Display SC';
+  src: url('./fonts/Playfair_Display_SC/PlayfairDisplaySC-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
   
   #headerVideo {
     position: absolute;
@@ -8,7 +13,7 @@
     min-height: 100%;
     width: auto;
     height: auto;
-    z-index: -1; /* Upewnij się, że wideo jest pod innymi elementami */
+    z-index: -1; 
     object-fit: cover; /* Zapewnia pokrycie całego obszaru bez utraty proporcji */
   }
     
@@ -25,8 +30,10 @@
   
   .header-buttons {
     grid-row: 2;
-    /* text-align: center;
-     Dodaj inne style dla przycisków */
+    
+    opacity: 0;
+    animation: fadeIn 1s ease-out 1.2s forwards;
+    transition-delay: 0.5s;
   }
   
   .header-buttons button {
@@ -51,12 +58,12 @@
  
   .header-buttons button {
     border: none;
-    width: 200px; /* zmieniłem z 20em na 200px dla spójności */
+    width: 200px; 
     padding: 10px 20px;
     margin: 5px;
     cursor: pointer;
-    border-radius: 20px; /* gładkie, zaokrąglone rogi */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* cień dający wrażenie głębi */
+    border-radius: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
     transition: all 0.3s ease; /* płynna animacja dla efektów hover i focus */
   }
   

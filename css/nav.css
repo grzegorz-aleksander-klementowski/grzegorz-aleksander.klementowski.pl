@@ -7,6 +7,10 @@ nav {
     left: 0;
     z-index: 2; /* be sure nav is into the text and vid */
     width: 100%;
+
+    opacity: 0;
+    animation: fadeIn 1s ease-out 1s forwards;
+    transition-delay: 0.5s;
   }
   
   .nav-container {
@@ -94,16 +98,5 @@ nav {
   
   .hamburger::after {
     transform: translateY(5px);
-  }
-  
-  /* Responsywność - pokazuje menu hamburgerowe na mniejszych ekranach */
-  @media (max-width: 768px) {
-    .nav-links {
-      display: none; /* ukryj linki na małych ekranach */
-    }
-  
-    .nav-toggle {
-      display: flex; /* pokaż przycisk hamburgera */
-    }
   }
   
