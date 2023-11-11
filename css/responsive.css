@@ -1,6 +1,6 @@
 
 @media screen and (max-width: 1800px) {
-    main .content-container {
+    .content-container {
       margin: 0 5%; 
     }
   }
@@ -54,4 +54,9 @@
     }
   }
   
- 
+ @media (max-width: 768px) {
+  .soft-skills-list li {
+    display: block;
+    margin: 10px auto; 
+  }
+}

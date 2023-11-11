@@ -3,30 +3,30 @@ function typeWriter(element, text, speed) {
   element.innerHTML = ''; // Upewnij się, że element jest pusty przed rozpoczęciem pisania
   function writeText() {
     if (index < text.length) {
-      element.innerHTML += text.charAt(index);
-      index++;
-      // Handle HTML tags (opening and closing fully)
-      if (text.charAt(index) === '<') {
+      let char = text.charAt(index);
+      if (char === '<') {
+        // Obsługa znaczników HTML
         let tag = '';
         do {
-          tag += text.charAt(index);
-          index++;
-        } while (index < text.length && text.charAt(index) !== '>');
-        tag += '>'; // Add the closing '>'
+          tag += char;
+          char = text.charAt(++index);
+        } while (char !== '>');
+        tag += char;
         element.innerHTML += tag;
-        index++;
+      } else {
+        element.innerHTML += char;
       }
+      index++;
       setTimeout(writeText, speed);
     }
   }
   writeText();
 }
 
-// Use this function in HTML after the page has loaded
 document.addEventListener('DOMContentLoaded', () => {
-  const myElement = document.querySelector('.typewriter'); // changed to class selector
-  const textToType = myElement.innerHTML; // Use the existing HTML in the element
-  typeWriter(myElement, textToType, 50); // 100 ms is the speed at which each letter appears
+  const myElement = document.querySelector('.typewriter');
+  const textToType = "Hi, I am Klementowski,<br>We are creating future of Information Management Sytems";
+  typeWriter(myElement, textToType, 50); // Adjust speed as necessary
 });
 
 

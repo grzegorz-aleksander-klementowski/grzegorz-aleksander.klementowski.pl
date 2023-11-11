@@ -28,7 +28,8 @@
     height: 80%;
   }
 
-  main > section.hero-skills .projects > .project {
+  
+  main > section.hero-skills .projects .project {
     
     text-align: center;
     display: grid;
@@ -38,12 +39,12 @@
     transition: transform 0.3s ease; /* Animacja dla efektu hover */
   }
 
-  main > section.hero-skills .projects > .project:hover {
+  main > section.hero-skills .projects .project:hover {
     transform: translateY(-10px); /* Podniesienie elementu listy po najechaniu */
     cursor: pointer;
   }
 
-  main > section.hero-skills .projects > .project > .project-icons-cover {
+  main > section.hero-skills .projects .project > .project-icons-cover {
     background-color: azure;
     border: 1px solid black;
     color: black;
@@ -59,18 +60,13 @@
     border-color: blueviolet;
     border-width: 3px;
   }
-  main > section.hero-skills .projects > .project > .project-icons-cover > img {
+  main > section.hero-skills .projects .project > .project-icons-cover > img {
     width: 75%;
     height: 75%;
   }
 
-  main > section.hero-skills .projects > .project > p {
+  main > section.hero-skills .projects .project > p {
     display: block;
-  }
-
-
-  main > section.hero-skills .projects > .project > h3 {
-
   }
 
   main > section.hero-skills .projects-sec-intro {
@@ -80,75 +76,112 @@
 
 
 
-  /* SOFT SKILLS */
+  /* SOFT SKILLS (section.curriculum-vitae) */
 
 /* Stylizacja dla sekcji About Me */
 main > section.curriculum-vitae > .content-container > div {
   text-align: center;
 }
 
-.about-me {
+main > section.curriculum-vitae > .content-container > :nth-child(1) {
+  grid-column: 1/3;
+  grid-row: 1;
+}
+
+main > section.curriculum-vitae > .content-container > :nth-child(2) {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+
+main > section.curriculum-vitae > .content-container > :nth-child(3) {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+main > section.curriculum-vitae > .content-container > :nth-child(4) {
+  grid-column: 1/3;
+  grid-row: 3;
+}
+
+main > section.curriculum-vitae > .content-container .about-me {
   background: #f7f7f7;
   color: #333;
   font-family: 'Arial', sans-serif;
-  padding: 40px 40px;
   border-radius: 20px;
 }
 
-.about-me h2 {
+main > section.curriculum-vitae > .content-container .about-me h2 {
   color: #1a1a1a;
-  font-size: 2.5rem;
-  margin-bottom: 20px;
+  font-size: 1.5rem;
   text-align: center;
+  padding: 10px;
 }
 
-.about-me p {
+main > section.curriculum-vitae > .content-container .about-me p {
+  padding: 10px;
+}
+
+main > section.curriculum-vitae > .content-container p {
   line-height: 1.6;
-  margin-bottom: 20px;
+  margin: 0;  
 }
 
 /* Stylizacja dla sekcji Soft Skills */
-.soft-skills h3 {
-  font-size: 1.8rem;
-  margin-top: 30px;
-  margin-bottom: 10px;
-  color: #1a1a1a;
+main > section.curriculum-vitae > .content-container h3 {
+  font-size: 1.4em;
+  color: #cecece;
   text-align: center;
+  margin: 0;
+  padding: 10px;
 }
 
-.soft-skills-list {
+main > section.curriculum-vitae > .content-container h2 {
+  font-size: 0.8rem;
+  color: #cecece;
+  text-align: center;
+  margin: 0;
+}
+
+main > section.curriculum-vitae > .content-container .soft-skills-list {
   list-style-type: none;
   padding: 0;
   margin: 0;
   text-align: center;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 4fr;
+  grid-gap: 20px;
 }
 
-.soft-skills-list li {
+main > section.curriculum-vitae > .content-container .soft-skills-list li {
   background: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   display: inline-block;
-  margin: 10px;
-  padding: 10px 20px;
   border-radius: 4px;
   transition: transform 0.3s ease;
   color: black;
   cursor: default;
+  padding: 15px;
+  text-align: left;
+
+  overflow: hidden;
+  height: 40px;
+  cursor: pointer;
 }
 
-.soft-skills-list li:hover {
+main > section.curriculum-vitae > .content-container .soft-skills-list li:hover {
   transform: translateY(-5px);
 }
 
 /* Stylizacja dla sekcji Interests and Aspirations */
-.interests-and-aspirations h3 {
-  font-size: 1.8rem;
-  margin-top: 30px;
-  margin-bottom: 10px;
+main > section.curriculum-vitae > .content-container .interests-and-aspirations h3 {
+  font-size: 1em;
   color: #c3c3c3;
   text-align: center;
 }
 
-.interests-and-aspirations p {
+main > section.curriculum-vitae > .content-container .interests-and-aspirations p {
   line-height: 1.6;
-  margin-bottom: 20px;
 }

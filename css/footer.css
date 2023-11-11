@@ -1,20 +1,9 @@
-footer.footer-index {
-  grid-area: footer;
-  background-color: black;
-  color: #f8f9fa;
-  font-family: Arial, sans-serif;
-  display: grid;
-  grid-template-columns: 1fr;
-}
-
-footer.footer-index > .content-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 3fr 1fr;
-}
 
 footer.footer-index .ending-info {
   grid-row: 1;
+  display: grid;
+  justify-items: center;
+  align-items: center;
 }
 
 /* Since we are now having one .contact div, we do not need auto-fit and minmax */
@@ -55,17 +44,3 @@ footer.footer-index .ending-info {
   color: #0056b3;
 }
 
-@media (max-width: 768px) {
-  
-}
-
-.reveal {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-
-.reveal.active {
-  opacity: 1;
-  transform: translateY(0px);
-}

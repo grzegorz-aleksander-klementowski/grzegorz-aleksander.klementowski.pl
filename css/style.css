@@ -2,14 +2,20 @@
 
 
 
+
 @font-face {
   font-family: 'Dominik';
-  src: url('./fonts/DOMINIKTHi.TTF') format('truetype');
+  src: url('../fonts/Dominik\ Thin/DOMINIKTH.TTF') format('truetype');
   font-weight: lighter;
   font-style: normal;
 }
 
-
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/Lato/Lato-Light.ttf') format('truetype');
+  font-weight: lighter;
+  font-style: normal;
+}
 
 
 body {
@@ -25,11 +31,20 @@ body {
   background-color: black;
   color: azure;
   font-weight: 100;
-  
-  -webkit-user-select: none; /* Chrome, Safari, Opera */
-  -moz-user-select: none;    /* Firefox */
-  -ms-user-select: none;     /* Internet Explorer/Edge */
-  user-select: none;  
+  font-family: Lato;  
+  -webkit-user-select: none;  /* Chrome, Safari, Opera */
+  -moz-user-select: none;     /* Firefox */
+  -ms-user-select: none;      /* Internet Explorer/Edge */
+  user-select: none;  */
+}
+
+a {
+  color: inherit;
+  text-decoration: none; 
+}
+
+strong {
+  font-weight: 800;
 }
 
 header {
@@ -54,7 +69,7 @@ main > section {
   align-items: center;
 }
 
-main .content-container {
+.content-container {
   max-width: 1600px;
   height: 100%;
   width: 90%;
@@ -90,68 +105,23 @@ main > section.curriculum-vitae {
 }
 
 main > section.curriculum-vitae > .content-container {
-  /* do uzupełnienia */
+  display: grid;
+  grid-template-columns: repeat(2fr);
+  grid-template-rows: 1fr 2fr 1fr;
+  grid-gap: 20px;
 }
 
-
-
-
-
-/* Dla urządzeń mobilnych, możemy zdecydować się na układanie li jeden pod drugim */
-@media (max-width: 768px) {
-  .soft-skills-list li {
-    display: block;
-    margin: 10px auto; /* Centralizacja elementów listy */
-  }
+footer.footer-index {
+  grid-area: footer;
+  background-color: black;
+  color: #f8f9fa;
+  font-family: Arial, sans-serif;
 }
 
-
-
-
-/* ANIMATIONS */
-@keyframes backgroundAnimation {
-  0% {
-    background-color: #000000; /* Czarny */
-  }
-  50% {
-    background-color: #000075; /* Niebieski */
-  }
-  100% {
-    background-color: #000000; /* Czarny */
-  }
-}
-
-
-
-
-.typewriter {
-  border-right: 2px solid black; /* Efekt kursora */
-  font-family: monospace; /* Czcionka o stałej szerokości */
-  white-space: nowrap; /* Zapobieganie łamaniu tekstu do nowej linii */
-}
-
-/* Opcjonalnie możesz dodać animację migającego kursora */
-@keyframes blink {
-  50% { border-color: transparent; }
-}
-.typewriter {
-  animation: blink 1s step-end infinite;
-}
-
-
-
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-.reveal {
-  opacity: 0;
-  transition: opacity 1.5s ease-out, transform 1s ease-out;
-  transform: translateY(20px);
-}
-
-.reveal.visible {
-  opacity: 1;
-  transform: translateY(0px);
+footer.footer-index > .content-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3fr 1fr;
+  justify-items: center;
+  align-items: center;
 }
