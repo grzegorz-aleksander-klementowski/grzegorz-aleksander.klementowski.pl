@@ -116,6 +116,10 @@ footer.footer-index {
   background-color: black;
   color: #f8f9fa;
   font-family: Arial, sans-serif;
+
+  display: grid;
+  justify-items: center;
+  align-items: center;
 }
 
 footer.footer-index > .content-container {

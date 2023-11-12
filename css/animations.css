@@ -109,10 +109,9 @@
     
     position: absolute;
     transform: translate(-50%, -50%);
-    pointer-events: none; /* Upewnij się, że kursor nie blokuje innych elementów */
-    /* transition: transform 0.15s ease-in-out; Opcjonalne: dodaj animację dla płynniejszego ruchu */
-    z-index: 9999; /* Upewnij się, że element cursor jest na wierzchu */
-    border-radius: 50%; /* Okrągły kształt */
+    pointer-events: none;
+    z-index: 9999; 
+    border-radius: 50%;
     box-shadow: 0 0 15px 10px rgba(255, 255, 255, 0.5); /* Dodaj cień */
 }
 
@@ -145,15 +144,15 @@
   
   
   .typewriter {
-    font-family: monospace; /* Czcionka o stałej szerokości */
-    position: relative; /* Ustawienie kontekstu dla pozycjonowania absolutnego pseudo-elementu */
+    font-family: monospace;
+    position: relative; 
   }
   
   .typewriter::after {
     content: '';
     display: inline-block; 
     width: 2px;
-    height: 1em; /* Wysokość kursora odpowiadająca wysokości linii tekstu */
+    height: 1em; 
     background-color: black;
     position: absolute;
     right: 0;

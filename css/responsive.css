@@ -1,25 +1,36 @@
 
-@media screen and (max-width: 1800px) {
-    .content-container {
-      margin: 0 5%; 
-    }
-  }
-
-
   /* Styl dla ekranów w orientacji pionowej */
-@media screen and (orientation: portrait) {
-    /* Twoje style dla orientacji pionowej */
+  @media screen and (orientation: portrait) {
+
+
+    main > section.main-presentation > .content-container {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+
+    .main-presentation .main-picture-presentation {
+      grid-column: 1;
+    }
+
+
   }
   
   /* Styl dla ekranów w orientacji poziomej */
   @media screen and (orientation: landscape) {
-    /* Twoje style dla orientacji poziomej */
-  }
 
   
+  }
+
+
+
+  @media (min-width: 481px) {
+    .content {
+      /* Style dla ekranów od 481px do 768px */
+    }
+  }
+
    /* Responsywność - pokazuje menu hamburgerowe na mniejszych ekranach */
    @media (max-width: 768px) {
-
 
 
     /* INDEX NAV */
@@ -32,7 +43,7 @@
     }
 
 
-/* INDEX FOOTER */
+    /* INDEX FOOTER */
     .footer-index .contact {
       grid-template-columns: 1fr; /* One column layout for mobile */
     }
@@ -52,11 +63,39 @@
     .footer-social li {
       margin: 0 10px;
     }
+
+
+    .soft-skills-list li {
+      display: block;
+      margin: 10px auto; 
+    }
+
+
   }
   
- @media (max-width: 768px) {
-  .soft-skills-list li {
-    display: block;
-    margin: 10px auto; 
+
+
+
+/* Laptopy i małe monitory */
+@media (min-width: 1025px) {
+  .content {
+    /* Style dla ekranów od 1025px do 1440px */
   }
+}
+
+/* Duże monitory */
+@media (min-width: 1441px) {
+  .content {
+    /* Style dla ekranów 1441px i większych */
+  }
+}
+
+@media screen and (max-width: 1800px) {
+
+
+  .content-container {
+    margin: 0 5%; 
+  }
+
+
 }
