@@ -1,101 +1,218 @@
 
   /* Styl dla ekranów w orientacji pionowej */
-  @media screen and (orientation: portrait) {
+@media screen and (orientation: portrait) {
 
 
-    main > section.main-presentation > .content-container {
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr;
-    }
-
-    .main-presentation .main-picture-presentation {
-      grid-column: 1;
-    }
-
-
-  }
+	/* INDEX NAV */
+    	.nav-links {
+      		display: none; /* ukryj linki na małych ekranach */
+	}
   
-  /* Styl dla ekranów w orientacji poziomej */
-  @media screen and (orientation: landscape) {
+    	.nav-toggle {
+      		display: grid; /* pokaż przycisk hamburgera */
+    	}
 
-  
-  }
+	.nav-toggle:hover {
+		cursor: pointer;
+	}
 
+	
 
+	main > section.main-presentation {
+		align-items: center;
+	}
 
-  @media (min-width: 481px) {
-    .content {
-      /* Style dla ekranów od 481px do 768px */
-    }
-  }
+	main > section.main-presentation > .content-container {
+      		grid-template-columns: 1fr;
+      		grid-template-rows: 1fr 1fr;		
+    	}
 
-   /* Responsywność - pokazuje menu hamburgerowe na mniejszych ekranach */
-   @media (max-width: 768px) {
+	.main-presentation .main-picture-presentation {
+      		grid-column: 1;
+		grid-row: 2;
+    	}
 
-
-    /* INDEX NAV */
-    .nav-links {
-      display: none; /* ukryj linki na małych ekranach */
-    }
-  
-    .nav-toggle {
-      display: flex; /* pokaż przycisk hamburgera */
-    }
-
-
-    /* INDEX FOOTER */
-    .footer-index .contact {
-      grid-template-columns: 1fr; /* One column layout for mobile */
-    }
-  
-    .footer-about,
-    .footer-contact,
-    .footer-social {
-      text-align: center;
-      margin-bottom: 20px; /* Add margin for spacing between the sections */
-    }
-  
-    .footer-social ul {
-      display: flex;
-      justify-content: center;
-    }
-  
-    .footer-social li {
-      margin: 0 10px;
-    }
+	main section.main-presentation img {
+		width: 100%;
+		height: 70vw;
+	}
 
 
-    .soft-skills-list li {
-      display: block;
-      margin: 10px auto; 
-    }
-
-
-  }
+}
   
 
 
+/* Styl dla ekranów w orientacji poziomej */
+@media screen and (orientation: landscape) {
+
+  
+}
+
+@media screen and (max-height: 800px) and (orientation: landscape) {
+  /* Style, które będą stosowane tylko wtedy, gdy ekran jest w orientacji poziomej (landscape) i jego wysokość jest mniejsza lub równa 700px */
+	
+	.main-picture-presentation img {
+		width: 100%;
+		height: 80vh;
+	} 
+
+	main > section.curriculum-vitae > .content-container .soft-skills-list li,
+	section.curriculum-vitae p,
+	main > section.curriculum-vitae > .content-container .about-me p {	
+		font-size: 0.8em;
+		padding-top: 5px;
+	}
+
+	main > section.curriculum-vitae > .content-container .about-me h2,
+	main > section.curriculum-vitae > .content-container h3 {
+		font-size: 1em;
+		padding-top: 5px;
+	}
+		
+	footer.footer-index > .content-container {
+		grid-template-rows: 2fr 1fr;
+	}
+
+}
+
+
+
+
+@media (max-width: 481px) {
+    
+    	/* NAV */
+
+    	.nav-container {
+     		padding: 0 2%;
+    	}
+
+    	.nav-logo .names {
+		font-size: 0.7em;
+    	}
+
+    	.nav-logo .surname {
+      	font-size: 1.05em;
+    	}
+
+    	.nav-container img {
+     
+    	}
+
+    	nav a {
+      		padding: 4%;
+    	}
+
+    	.nav-social-links {
+	display: flex;      
+	}
+
+
+	/* HEADER */
+
+	header {
+	
+    	}
+
+    	.header-hero {
+      		width: 100vw;
+      		font-size: 0.8em;      
+	}
+
+
+
+}
+
+/* Responsywność od 481px do 768px szerokości */
+@media (max-width: 768px) {
+    
+    	
+    	/* INDEX FOOTER */
+    	.footer-index .contact {
+      		grid-template-columns: 1fr; /* One column layout for mobile */
+    	}
+  
+    	.footer-about, .footer-contact, .footer-social {
+      		text-align: center;
+      		margin-bottom: 20px; /* Add margin for spacing between the sections */
+    	}
+  
+    	.footer-social ul {
+      		display: flex;
+      		justify-content: center;
+    	}
+  
+    	.footer-social li {
+      		margin: 0 10px;
+	}
+
+
+	.soft-skills-list li {
+      		display: block;
+      		margin: 10px auto; 
+	}
+
+
+}
+  
+
+@media (max-width: 1200px) {
+
+	body {
+      
+    	}
+
+}
 
 /* Laptopy i małe monitory */
-@media (min-width: 1025px) {
-  .content {
-    /* Style dla ekranów od 1025px do 1440px */
-  }
+@media (max-width: 1025px) {
+  
+    
 }
 
-/* Duże monitory */
-@media (min-width: 1441px) {
-  .content {
-    /* Style dla ekranów 1441px i większych */
-  }
+@media screen and (max-width: 1280px) and (max-height: 1024px) {
+
+	main section.main-presentation {
+		font-size: 0.8em;
+	}
+
+	  .main-picture-presentation img {
+    		width: 100%;
+    		height: 70vh;
+  	}
+
+	main > section {
+		align-items: end;
+	}
 }
+
+
+
+/* Duże monitory */
+@media (max-width: 1441px) {
+
+  	.content {
+    	/* Style dla ekranów 1441px i większych */ 
+  	}
+
+}
+
+@media (max-width: 1600px) {
+
+	footer.footer-index {
+		display: grid;
+		justify-items: normal;
+		align-items: normal;
+	}
+
+}
+
 
 @media screen and (max-width: 1800px) {
 
 
-  .content-container {
-    margin: 0 5%; 
-  }
+	.content-container {
+    		margin: 0 5%; 
+	}
 
 
 }

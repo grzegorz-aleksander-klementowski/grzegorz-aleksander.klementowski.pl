@@ -59,11 +59,6 @@ document.addEventListener('DOMContentLoaded', revealOnScroll);
 
 
 
-
-
-
-
-
 //funkcja przesuwa ekran do klasy
 function scrollToClass(className) {
     const element = document.querySelector('.' + className);
