@@ -79,38 +79,47 @@ nav a {
   }
 
 
+
+	/* Hamburger */
   
-  .nav-toggle {
-    display: none;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 2rem;
-    height: 1.5rem;
-    border: 2px solid #e7e7e7; /* Obramowanie przycisku */
-    padding: 5px; /* Dodatkowy odstęp wewnątrz przycisku */
-    box-sizing: border-box; /* Uwzględnia padding i border w wymiarach elementu */
-    background: none; /* Brak tła */
-  }
-  
-  .hamburger,
-  .hamburger::before,
-  .hamburger::after {
-    display: block;
-    background-color: #e7e7e7;
-    height: 2px;
-    width: 2rem;
-    border-radius: 10px;
-    transition: all 0.3s ease-in-out;
-    position: relative;
-  }
-  
-  .hamburger::before {
-    content: "";
-    transform: translateY(-6px);
-  }
-  
-  .hamburger::after {
-    content: "";
-    transform: translateY(6px);
-  }
-  
+	.nav-toggle {
+		display: none;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		width: 35px;
+		height: 35px;
+		border: 2px solid #e7e7e7; /* Obramowanie przycisku */ 
+		border-radius: 5px;
+		padding: 5px; /* Dodatkowy odstęp wewnątrz przycisku */
+		box-sizing: border-box; /* Uwzględnia padding i border w wymiarach elementu */
+		background: none; /* Brak tła */
+	  }
+	  
+	.hamburger,
+	.hamburger::before,
+	.hamburger::after {
+		display: block;
+		background-color: #e7e7e7;
+		height: 2px;
+		width: 20px;
+		border-radius: 20px;
+		transition: all 0.3s ease-in-out;
+		position: relative;
+	}
+	  
+	.hamburger::before {
+		content: "";
+		transform: translateY(-6px);
+	}
+	  
+	.hamburger::after {
+		content: "";
+		transform: translateY(4px);
+	}
+
+/* Mobile Menu */
+
+
+
+

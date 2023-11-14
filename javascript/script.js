@@ -30,10 +30,26 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+function handleHamburgerClick() {
+ var navLinks = document.querySelector('.nav-links');
+    if (navLinks.classList.contains('show-menu')) {
+        navLinks.classList.add('hide-menu');
+        setTimeout(function() {
+            navLinks.style.display = 'none';
+        }, 1000); // animation time 
+        navLinks.classList.remove('show-menu');
+    } else {
+        navLinks.style.display = 'grid';
+        navLinks.classList.add('show-menu');
+        navLinks.classList.remove('hide-menu');
+    }
+}
 
+function mobileToggleMenu() {
+	console.log('Mobile Menu hiden');
+}
 
-/* revealOn when element on the screaan */
-// Funkcja, która dodaje klasę 'visible' do elementu, gdy ten znajdzie się w viewport
+// Function add "visible" class to the element, when is in viewport area */
 function revealOnScroll() {
   const elementsToReveal = document.querySelectorAll('.reveal');
 
@@ -71,7 +87,7 @@ function scrollToClass(className) {
 
 
 
-// Tablica z klasami w odpowiedniej kolejności
+
 const sectionClasses = [
   'header-index',
   'main-presentation',
@@ -80,7 +96,7 @@ const sectionClasses = [
   'footer-index'
 ];
 
-// Funkcja do przewijania do danej klasy
+// Function to scrooll to particular class
 function scrollToClass(className) {
   const element = document.querySelector('.' + className);
   if (element) {

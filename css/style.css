@@ -84,6 +84,8 @@ main > section {
   align-items: center;
 }
 
+/* main-presentation */
+
 main .main-presentation {
   background: linear-gradient(to right, #000000, #0101ad);
 }
@@ -94,6 +96,7 @@ main > section.main-presentation > .content-container {
   
 }
 
+/* hero-skills */
 
 main > section.hero-skills {
   animation: backgroundAnimation 9s infinite; 
@@ -104,16 +107,21 @@ main > section.hero-skills > .content-container {
   grid-template-rows: 1fr 3fr;
 }
 
+
+/* curriculum-vitae */
+
 main > section.curriculum-vitae {
   background-color: #3c0058;
 }
 
 main > section.curriculum-vitae > .content-container {
   display: grid;
-  grid-template-columns: repeat(2fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr 2fr 1fr;
   grid-gap: 20px;
 }
+
+/* footer */
 
 footer.footer-index {
   grid-area: footer;

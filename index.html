@@ -34,11 +34,25 @@
 						<Span class="names">Grzegorz Aleksander</Span>
 						<span class="surname">Klementowski</span>
 					</a>
-				  	<div class="nav-links">
-						<a onclick="scrollToClass('main-presentation')">About</a>
-						<a onclick="scrollToClass('hero-skills')">Portfolio</a>
-						<a onclick="scrollToClass('curriculum-vitae')">Competencies</a>
-						<a onclick="scrollToClass('footer-index')">Contact</a>
+				  	<div class="nav-links hide-menu">
+						<span onclick="handleHamburgerClick()">x</span>
+						<a onclick="scrollToClass('header-index'); handleHamburgerClick();">Home</a>
+						<a onclick="scrollToClass('main-presentation'); handleHamburgerClick();">About</a>
+						<a onclick="scrollToClass('hero-skills'); handleHamburgerClick();">Portfolio</a>
+						<a onclick="scrollToClass('curriculum-vitae'); handleHamburgerClick();">Competencies</a>
+						<a onclick="scrollToClass('footer-index'); handleHamburgerClick();">Contact</a>
+
+						<div class="nav-social-links">
+							<a href="https://www.facebook.com/GrzegorzAleksanderKlementowski/" target="_blank">
+								<img src="./img/facebook-svgrepo-com-black.svg" alt="facebook icon">
+							</a>
+							<a href="https://github.com/Klemens-Gak" target="_blank">
+								<img src="./img/github-142-svgrepo-com-black.svg" alt="github icon">
+							</a>
+							<a href="https://www.linkedin.com/in/grzegorz-aleksander-klementowski/" target="_blank">
+								<img src="./img/linkedin-round-svgrepo-com-black.svg" alt="likedin icon">
+							</a>
+						</div>
 				  	</div>
 					<div class="nav-social-links">
 						<a href="https://www.facebook.com/GrzegorzAleksanderKlementowski/" target="_blank">
@@ -51,7 +65,7 @@
 							<img src="./img/linkedin-round-svgrepo-com.svg" alt="likedin icon">
 						</a>
 					</div>
-				  <button class="nav-toggle" aria-label="Open navigation">
+				  <button onclick="handleHamburgerClick()" class="nav-toggle" aria-label="Open navigation">
 					<span class="hamburger"></span>
 				  </button>
 				</div>				
@@ -114,8 +128,8 @@
 								<img src="./img/microsoft-sql-server-logo-svgrepo-com.svg" alt="microsoft-sql-server icon">
 								<img src="./img/airplane-svgrepo-com.svg" alt="airplane icon">
 							</div>
-							<h3>Airtrails-SQL-Queries</h3>							 
-							</div>
+							<h3>Airtrails-SQL-Queries</h3>
+						</div>
 						</a>
 						<a href="" target="_blank">
 						<div class="project">
@@ -124,7 +138,7 @@
 							<img src="./img/unity-svgrepo-com.svg" alt="unity icon">
 							<img src="./img/game-svgrepo-com.svg" alt="game icon">
 							</div>
-							<h3>Games</h3>							
+							<h3>Games</h3>
 						</div>
 						</a>
 						<a href="" target="_blank">
@@ -134,7 +148,7 @@
 								<img src="./img/bitcoin-circle-svgrepo-com.svg" alt="bitcoin icon">
 								<img src="./img/rust-svgrepo-com.svg" alt="rust-lang icon">
 							</div>
-							<h3>Blockchain app</h3>							
+							<h3>Blockchain app</h3>
 						</div>
 						</a>
 						<a href="" target="_blank">
@@ -144,7 +158,7 @@
 								<img src="./img/ChatGPT_logo.svg" alt="GPT icon">
 								<img src="./img/rust-svgrepo-com.svg" alt="rust-lang icon">
 							</div>
-							<h3>AI App</h3>					
+							<h3>AI App</h3>
 						</div>
 						</a>
 					</div>
