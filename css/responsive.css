@@ -50,9 +50,15 @@
 	    	cursor: pointer;
 	} 
 
-	nav > .nav-container > .nav-links:nth-child(1) {
-		
-	}
+	nav > .nav-container > .nav-links > a:nth-child(2) {grid-row: 2;}
+	nav > .nav-container > .nav-links > a:nth-child(3) {grid-row: 3;}
+	nav > .nav-container > .nav-links > a:nth-child(4) {grid-row: 4;}
+	nav > .nav-container > .nav-links > a:nth-child(5) {grid-row: 5;}
+	nav > .nav-container > .nav-links > a:nth-child(6) {grid-row: 6;}
+	nav > .nav-container > .nav-links > div:nth-child(7) {grid-row: 7;}
+
+
+
 
 	nav > .nav-container > .show-menu {
 	    display: grid;
@@ -68,6 +74,14 @@
 	    transition: opacity 1s, transform 1s;
 	    transition-delay: 0.5s; /* opóźnienie potrzebne, aby element nie zniknął natychmiast */
 	    display: none;
+	}
+
+	nav > .nav-container > .nav-links > .nav-social-links {
+	display: block;	
+	}
+
+	nav > .nav-container > .nav-links > span {
+	display: block;
 	}
 
 

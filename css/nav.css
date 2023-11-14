@@ -120,6 +120,10 @@ nav a {
 
 /* Mobile Menu */
 
+nav > .nav-container > .nav-links > span {
+	display: none;
+}
 
-
-
+nav > .nav-container > .nav-links > .nav-social-links {
+	display: none;	
+}
