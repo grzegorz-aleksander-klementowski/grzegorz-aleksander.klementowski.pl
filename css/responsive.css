@@ -288,15 +288,17 @@
 			grid-template-rows: 1fr 2fr;
 		}
 
-		main section.hero-skills .projects-sec-intro {
-				margin: 5px 0 0 0;
-				font-size: 0.8em;
-		}
+		
 
 		main > section.hero-skills .projects {
 			grid-template-columns: repeat(2, 1fr);
   			grid-template-rows: repeat(3, 1fr);
 			grid-gap: 20px
+		}
+
+		main section.hero-skills .projects-sec-intro {
+				margin: 5px 0 0 0;
+				font-size: 0.8em;
 		}
 
 		main section.hero-skills .projects-sec-intro p {
@@ -378,27 +380,148 @@
 
 }
 
+@media screen and (orientation: portrait) and (max-width: 815px) and (min-height: 900px) {
 
+	main > section.main-presentation .main-text-presentation {
+		font-size: 0.9em;
+	}
+
+
+	main > section.curriculum-vitae > .content-container {
+		grid-template-rows: 1fr 2fr 2fr 1fr;
+		grid-gap: 15px;
+	}
+
+	main > section.main-presentation .main-text-presentation h2 {
+		margin: 3px 0;	
+	}
+
+	main > section.curriculum-vitae > .content-container .about-me p {
+		padding: 10px;
+	}
+
+	main > section.curriculum-vitae > .content-container .about-me h2 {
+		padding: 10px 0 0 0;
+		font-size: 0.8em;
+	}
+
+	main > section.curriculum-vitae > .content-container h3 {
+		padding: 10px;
+		margin: 0px;
+	}
+	
+	main > section.curriculum-vitae > .content-container .about-me h2,
+	main > section.curriculum-vitae > .content-container h3,
+	main > section.curriculum-vitae > .content-container .interests-and-aspirations h3 {
+		font-size: 0.9em;
+	}
+	
+	main > section.curriculum-vitae > .content-container .soft-skills-list li,
+	section.curriculum-vitae p,
+	main > section.curriculum-vitae > .content-container .about-me p {
+		font-size: 0.7em;
+		line-height: 1.2;
+	}
+
+	main > section.curriculum-vitae > .content-container .soft-skills-list li {
+		height:auto;
+	}
+
+
+} 
 
 
 /* LANDSCAPE */
 
 
 
-
-/* Styl dla ekranów w orientacji poziomej */
-@media screen and (orientation: landscape) {
-
-  
-}
-
-@media screen and (max-height: 800px) and (orientation: landscape) {
-  /* Style, które będą stosowane tylko wtedy, gdy ekran jest w orientacji poziomej (landscape) i jego wysokość jest mniejsza lub równa 700px */
+@media screen and (max-height: 500px) and (max-width: 1000px) and (orientation: landscape) {
 	
+	/* NAV */
+	
+	
+
+	.nav-container {
+		padding: 0 5%;
+		height: 40px;
+	}
+
+	nav > .nav-container > .nav-social-links {
+		display: none;
+	}
+
+	.nav-logo .names {
+		font-size: 0.5em;
+	}
+
+	.nav-logo .surname {
+		font-size: 0.7em;
+	}
+
+	nav a {
+		padding: 0;
+		font-family: 0.7em;
+	}
+
+	.nav-links a {
+		font-size: 0.7em;
+	}
+
+	.nav-social-links {
+		display: flex;      
+	}
+
+	.nav-toggle {
+		width: 30px;
+		height: 25px;
+		border: 1px solid #e7e7e7;
+	}
+
+	nav > .nav-container > .nav-links > span {
+			padding: 5px;
+	}
+
+	/* HEADER */
+
+
+
+	.header-hero {
+		width: 100vw;
+		font-size: 0.7em;
+		margin: 0 5%;   
+	}
+
+	.header-buttons button:nth-child(1) {
+			border-radius: 20px; 
+	}
+	  
+	.header-buttons button:nth-child(2) {
+			border-radius: 20px; 
+	}
+
+	/* MAIN */
+
+	main > section {
+	}
 	.main-picture-presentation img {
 		width: 100%;
 		height: 80vh;
 	} 
+
+	main section.hero-skills .projects-sec-intro h2 {
+		margin: 0;
+		font-size: 0.9em;
+		font-weight: 600;
+	}
+
+	main > section.hero-skills .projects .project > .project-icons-cover {
+		padding: 0;
+	}
+
+	main > section.hero-skills .projects .project h3 {
+		margin: 0;
+		font-size: 0.8em;
+	}
 
 	main > section.curriculum-vitae > .content-container .soft-skills-list li,
 	section.curriculum-vitae p,
@@ -412,22 +535,122 @@
 		font-size: 1em;
 		padding-top: 5px;
 	}
-		
+	
+	main section.main-presentation .main-text-presentation {
+		font-size: 0.7em;
+	}
+	
+	main > section.main-presentation .main-text-presentation h2 {
+		margin: 15px 0 0 0;	
+	}
+	main section.hero-skills .projects-sec-intro {
+		margin: 20px 0 0 0;
+		font-size: 0.8em;
+	}
+
+	main section.hero-skills .projects-sec-intro p {
+		margin: 5px 0 0 0;
+	}
+
+	/* curriculum-vitae */
+
+	main > section.curriculum-vitae > .content-container {
+		margin: 0;
+		padding: 3px;
+		grid-template-rows: 1fr 3fr 1fr;
+		grid-gap: 10px;
+	}
+	main > section.curriculum-vitae > .content-container .about-me p {
+		padding: 5px;
+	}
+
+	main > section.curriculum-vitae > .content-container .about-me h2 {
+		padding: 5px 0 0 0;
+		font-size: 0.8em;
+	}
+
+	main > section.curriculum-vitae > .content-container h3 {
+		padding: 0;
+		margin: 0px;
+	}
+	
+	main > section.curriculum-vitae > .content-container .about-me h2,
+	main > section.curriculum-vitae > .content-container h3,
+	main > section.curriculum-vitae > .content-container .interests-and-aspirations h3 {
+		font-size: 0.7em;
+	}
+	
+	main > section.curriculum-vitae > .content-container .soft-skills-list li,
+	section.curriculum-vitae p,
+	main > section.curriculum-vitae > .content-container .about-me p {
+		font-size: 0.5em;
+		line-height: 1;
+	}
+
+	
+
+	main > section.curriculum-vitae > .content-container .soft-skills-list {
+		grid-gap: 10px;
+		margin: 0;
+		padding: 0;
+	}
+	
+	main > section.curriculum-vitae > .content-container .soft-skills-list li {
+		height: unset;
+		margin: 0;
+		padding: 5px;
+	}
+	
+	/* FOOTER */ 
+
 	footer.footer-index > .content-container {
 		grid-template-rows: 2fr 1fr;
 	}
 
+
+	footer.footer-index {
+		align-items: center;
+	}
+	footer.footer-index > .content-container {
+		grid-template-rows: 1fr 3fr;
+	}
+
+	.footer-index > .content-container > .contact {
+		grid-gap: 7px;
+		grid-template-columns: repeat(3, 1fr);
+	}
+	
+	.footer-social ul {
+		flex-direction: column-reverse;
+	}
+	.footer-index p, li{
+		font-size: 0.7em;
+		text-align: left;
+	}
+	.footer-index .contact p {
+		margin: 3px;
+		
+	}
+
+	/* .footer-index .contact div:nth-child(1), .footer-index .contact div:nth-child(2) {border-right: 1px white solid;} */
+
+
+	.footer-index h2,
+	.footer-index h3 {
+		font-size: 1em;
+		margin: 5px;
+	}
+
+	.footer-index .contact h2,
+	.footer-index .contact h3 {
+		font-size: 1em;
+		margin: 3px;
+	}
+
+
 }
 
 
-
-
-@media (max-width: 481px) {
-    
-    	
-
-
-}
 
 /* Responsywność od 481px do 768px szerokości */
 @media screen and (max-width: 768px) and (orientation: landscape) {
