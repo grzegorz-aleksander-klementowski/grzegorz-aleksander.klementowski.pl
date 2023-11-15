@@ -43,6 +43,7 @@
     margin: 5px;
     cursor: pointer;
     border-radius: 5%;
+    display: grid;
   }
 
   .header-buttons button:nth-child(1) {

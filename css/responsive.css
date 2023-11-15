@@ -13,39 +13,39 @@
     	}
 
 	.nav-toggle:hover {
-		cursor: pointer;
+			cursor: pointer;
 	}
 
 
  	/* toggled-nav-appered */ 
 	nav > .nav-container > .nav-links {
-		display: none;
-		grid-template-columns: 1fr;
-		grid-template-rows: repeat(6, 1fr) 3fr;
-		justify-items: center;
-		align-items: center;
+			display: none;
+			grid-template-columns: 1fr;
+			grid-template-rows: repeat(6, 1fr) 3fr;
+			justify-items: center;
+			align-items: center;
 
-		position: absolute;
-		top: 0;
-		left: 0;
-		z-index: 2;
-		width: 100vw;
-		height: 100vh;
-		background-color: white;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 2;
+			width: 100vw;
+			height: 100vh;
+			background-color: white;
 	}
 
 	nav > .nav-container > .nav-links > a {
-		color: black;
+			color: black;
 	}
 
 	nav > .nav-container > .nav-links > span {
-		position: absolute;
+			position: absolute;
 	    	top: 20px;
 	    	right: 40px;
 	    	z-index: 3;
 	    	font-weight: 200;
-	    	font-size: 3em;
-	   	color: black;
+	    	font-size: 2em;
+	   		color: black;
 	    	padding: 10px 30px;
 	    	cursor: pointer;
 	} 
@@ -61,27 +61,27 @@
 
 
 	nav > .nav-container > .show-menu {
-	    display: grid;
-	    opacity: 1;
-	    transform: translateY(0);
-	    transition: opacity 1s, transform 1s;
-	    transition-delay: 1s; 
+			display: grid;
+			opacity: 1;
+			transform: translateY(0);
+			transition: opacity 1s, transform 1s;
+			transition-delay: 1s; 
 	}
 
 	nav > .nav-container > .hide-menu {
-	    opacity: 0;
-	    transform: translateY(-100%);
-	    transition: opacity 1s, transform 1s;
-	    transition-delay: 0.5s; /* opóźnienie potrzebne, aby element nie zniknął natychmiast */
-	    display: none;
+			opacity: 0;
+			transform: translateY(-100%);
+			transition: opacity 1s, transform 1s;
+			transition-delay: 0.5s; /* opóźnienie potrzebne, aby element nie zniknął natychmiast */
+			display: none;
 	}
 
 	nav > .nav-container > .nav-links > .nav-social-links {
-	display: block;	
+			display: block;	
 	}
 
 	nav > .nav-container > .nav-links > span {
-	display: block;
+			display: block;
 	}
 
 
@@ -89,105 +89,301 @@
 	/* main-presentation */
 
 	main > section.main-presentation {
-		align-items: center;
+			align-items: center;
 	}
 
 	main > section.main-presentation .main-text-presentation{
-		font-size: 1.1em;
+			font-size: 1.1em;
 	}
 
 	main > section.main-presentation > .content-container {
-      		grid-template-columns: 1fr;
-      		grid-template-rows: 1fr 1fr;		
+				grid-template-columns: 1fr;
+				grid-template-rows: 1fr 1fr;		
     	}
 
 	.main-presentation .main-picture-presentation {
       		grid-column: 1;
-		grid-row: 2;
+			grid-row: 2;
     	}
 
 	main section.main-presentation img {
-		width: 100%;
-		height: 50vw;
+			width: 100%;
+			height: 50vw;
 	}
 	/* hero-skills */	
 	main > section.hero-skills .projects .project > .project-icons-cover {
-		height: 10vh;
+			height: 10vh;
 	}
 
 	/* curriculum-vitae */
 
 
 	main > section.curriculum-vitae > .content-container {
-		grid-template-columns: 1fr;
-		grid-template-rows: 1fr 2fr 2fr 1fr;
+			grid-template-columns: 1fr;
+			grid-template-rows: 1fr 2fr 2fr 1fr;
 	}
 
 
 	main > section.curriculum-vitae > .content-container > :nth-child(1) {
-		grid-column: 1;
-		grid-row: 1;
+			grid-column: 1;
+			grid-row: 1;
 	}
 
 	main > section.curriculum-vitae > .content-container > :nth-child(2) {
-		grid-column: 1;
-		grid-row: 2;
+			grid-column: 1;
+			grid-row: 2;
 	}
 
 
 	main > section.curriculum-vitae > .content-container > :nth-child(3) {
-		grid-column: 1;
-		grid-row: 3;
+			grid-column: 1;
+			grid-row: 3;
 	}
 
 	main > section.curriculum-vitae > .content-container > :nth-child(4) {
-		grid-column: 1;
-		grid-row: 4;
+			grid-column: 1;
+			grid-row: 4;
 	}
 		
 	main > section.curriculum-vitae > .content-container .soft-skills-list li{
-		margin: 0;	
-		padding: 5px;
+			margin: 0;	
+			padding: 5px;
 	}
 
 	main > section.curriculum-vitae > .content-container .soft-skills-list {
-		grid-gap: 10px;
+			grid-gap: 10px;
 	}
 
 	main > section.curriculum-vitae > .content-container .soft-skills-list li,
 	section.curriculum-vitae p,
 	main > section.curriculum-vitae > .content-container .about-me p {	
-		font-size: 0.8em;
+			font-size: 0.8em;
 	}
 
 	main > section.curriculum-vitae > .content-container .about-me h2,
 	main > section.curriculum-vitae > .content-container h3 {
-		font-size: 1em;
-		padding-top: 5px;
+			font-size: 1em;
+			padding-top: 5px;
 	}
 		
 
 	/* footer */
 
 	footer.footer-index {
-		justify-items: center;
-		align-items: center;
+			justify-items: center;
+			align-items: center;
 	}
 
 	footer.footer-index > .content-container {
-		grid-template-columns: 1fr;
-		grid-template-rows: 1fr 3fr;
+			grid-template-columns: 1fr;
+			grid-template-rows: 1fr 3fr;
 	}
 
 	.footer-index > .content-container > .contact {
-		grid-row: 2;
-		grid-template-columns: 1fr; 
-		grid-template-rows: repeat(3, 1fr);
-		grid-gap: 20px;
+			grid-row: 2;
+			grid-template-columns: 1fr; 
+			grid-template-rows: repeat(3, 1fr);
+			grid-gap: 20px;
 	}
 
 }
   
+@media screen and (orientation: portrait) and (max-width: 481px) {
+
+		h2 {
+			margin: 5px 0 0 0;
+			font-size: 1.1em;
+		}
+
+		h3 {
+			margin: 5px 0 0 0;
+			font-size: 0.8em;
+		}
+
+		/* NAV */
+
+		.nav-container {
+			padding: 0 5%;
+			height: 40px;
+		}
+
+		nav > .nav-container > .nav-social-links {
+			display: none;
+		}
+
+		.nav-logo .names {
+			font-size: 0.5em;
+		}
+
+		.nav-logo .surname {
+				font-size: 0.7em;
+		}
+	
+		nav a {
+				padding: 0;
+		}
+
+		.nav-social-links {
+				display: flex;      
+		}
+
+		.nav-toggle {
+				width: 30px;
+				height: 25px;
+				border: 1px solid #e7e7e7;
+		}
+
+		nav > .nav-container > .nav-links > span {
+				padding: 5px;
+		}
+
+
+		/* HEADER */
+
+		.header-hero {
+				width: 100vw;
+				font-size: 0.7em;
+				margin: 0 5%;      
+		}
+
+		.header-buttons button:nth-child(1) {
+				border-radius: 20px; 
+		}
+		  
+		.header-buttons button:nth-child(2) {
+				border-radius: 20px; 
+		}
+
+		/* MAIN */
+
+		main > section {
+  			align-items: center;
+		}
+
+		.content-container {
+			margin: 0;
+		}
+
+		/* main-presentation */
+		
+		
+		
+		
+
+		main > section.main-presentation .main-text-presentation {
+				font-size: 0.67em;
+		}
+
+		main > section.main-presentation p {
+				margin-top: 3px;
+		}
+
+		main section.main-presentation img {
+				height: 60vw;
+		}
+		
+		/* hero-skills */
+		main > section.hero-skills > .content-container {
+			grid-template-columns: 1fr;
+			grid-template-rows: 1fr 2fr;
+		}
+
+		main section.hero-skills .projects-sec-intro {
+				margin: 5px 0 0 0;
+				font-size: 0.8em;
+		}
+
+		main > section.hero-skills .projects {
+			grid-template-columns: repeat(2, 1fr);
+  			grid-template-rows: repeat(3, 1fr);
+			grid-gap: 20px
+		}
+
+		main section.hero-skills .projects-sec-intro p {
+			margin: 5px 0 0 0;
+		}
+
+		main > section.hero-skills .projects .project > .project-icons-cover {
+			padding: 0 3px;
+		}
+
+		/* curriculum-vitae */
+		
+		
+		main > section.curriculum-vitae > .content-container {
+			grid-template-rows: 1fr 2fr 2fr 1fr;
+			grid-gap: 5px;
+		}
+
+
+		main > section.curriculum-vitae > .content-container .about-me p {
+			padding: 5px;
+		}
+
+		main > section.curriculum-vitae > .content-container .about-me h2 {
+			padding: 5px 0 0 0;
+			font-size: 0.8em;
+		}
+
+		main > section.curriculum-vitae > .content-container h3 {
+			padding: 0;
+			margin: 0px;
+		}
+		
+		main > section.curriculum-vitae > .content-container .about-me h2,
+		main > section.curriculum-vitae > .content-container h3,
+		main > section.curriculum-vitae > .content-container .interests-and-aspirations h3 {
+			font-size: 0.7em;
+		}
+		
+		main > section.curriculum-vitae > .content-container .soft-skills-list li,
+		section.curriculum-vitae p,
+		main > section.curriculum-vitae > .content-container .about-me p {
+			font-size: 0.5em;
+			line-height: 1;
+		}
+
+		main > section.curriculum-vitae > .content-container .soft-skills-list li {
+			height:auto;
+		}
+
+		/* footer */
+
+		footer.footer-index > .content-container {
+			grid-template-rows: 1fr 2fr;
+		}
+		
+		.footer-index > .content-container > .contact {
+			grid-gap: 3px;
+		}
+
+		.footer-index p, li{
+			font-size: 0.8em;
+		}
+		.footer-index .contact p {
+			margin: 3px;
+		}
+
+		.footer-index h2,
+		.footer-index h3 {
+			font-size: 1em;
+			margin: 5px;
+		}
+
+		.footer-index .contact h2,
+		.footer-index .contact h3 {
+			font-size: 1em;
+			margin: 3px;
+		}
+
+}
+
+
+
+
+/* LANDSCAPE */
+
+
 
 
 /* Styl dla ekranów w orientacji poziomej */
@@ -228,44 +424,7 @@
 
 @media (max-width: 481px) {
     
-    	/* NAV */
-
-    	.nav-container {
-     		padding: 0 2%;
-    	}
-
-    	.nav-logo .names {
-		font-size: 0.7em;
-    	}
-
-    	.nav-logo .surname {
-      	font-size: 1.05em;
-    	}
-
-    	.nav-container img {
-     
-    	}
-
-    	nav a {
-      		padding: 4%;
-    	}
-
-    	.nav-social-links {
-	display: flex;      
-	}
-
-
-	/* HEADER */
-
-	header {
-	
-    	}
-
-    	.header-hero {
-      		width: 100vw;
-      		font-size: 0.8em;      
-	}
-
+    	
 
 
 }
