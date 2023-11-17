@@ -151,7 +151,13 @@ const onWheelEvent = (event) => {
 // Dodanie nasłuchiwania na zdarzenie przewijania kółkiem
 document.addEventListener('wheel', onWheelEvent);
 
-  
+
+
+
+
+
+
+
 
 
 
@@ -237,3 +243,49 @@ window.addEventListener('mouseup', function(event) {
 
   }
 });
+
+
+
+
+// touch screen function
+
+let touchStartY = 0;
+let touchEndY = 0;
+let touchStartTime = 0;
+
+const someThreshold = 0.3 // value that has to be defined. Define strong of hold/move of touch.
+
+
+window.addEventListener('touchstart', function(event) {
+  touchStartY = event.touches[0].clientY;
+  touchStartTime = new Date().getTime(); // Save time of touch start.
+}, false);
+
+
+
+window.addEventListener('touchmove', function(event) {
+  // Optionally: actualize end posision durring the movment. 
+  touchEndY = event.changedTouches[0].clientY;
+}, false);
+
+window.addEventListener('touchend', function(event) {
+  touchEndY = event.changedTouches[0].clientY;
+  handleTouchEnd();
+}, false);
+
+function handleTouchEnd() {
+  const touchDuration = new Date().getTime() - touchStartTime; // Durration of screen touching
+  const touchDistance = Math.abs(touchEndY - touchStartY); // Odległość przesunięcia
+
+  const swipeStrength = touchDistance / touchDuration; // Strange of movment
+
+  console.log('Siła przesunięcia:', swipeStrength);
+
+  if (swipeStrength > someThreshold) {
+    findCloserElement();   }
+  else findCloserElement();
+}
+
+
+
+
