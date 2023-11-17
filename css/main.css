@@ -106,9 +106,9 @@ main > section.curriculum-vitae > .content-container > :nth-child(4) {
 
 main > section.curriculum-vitae > .content-container .about-me {
   background: #f7f7f7;
-  color: #333;
-  font-family: 'Arial', sans-serif;
+  color: black;
   border-radius: 20px;
+  font-weight: 400;
 }
 
 main > section.curriculum-vitae > .content-container .about-me h2 {
@@ -120,6 +120,7 @@ main > section.curriculum-vitae > .content-container .about-me h2 {
 
 main > section.curriculum-vitae > .content-container .about-me p {
   padding: 10px;
+  font-weight: 300px;
 }
 
 main > section.curriculum-vitae > .content-container p {
