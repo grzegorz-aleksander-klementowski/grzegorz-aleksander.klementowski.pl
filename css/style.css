@@ -47,6 +47,10 @@ a:visited {
 	color: inherit;
 }
 
+button {
+	cursor: pointer;
+}
+
 strong {
   font-weight: 800;
 }

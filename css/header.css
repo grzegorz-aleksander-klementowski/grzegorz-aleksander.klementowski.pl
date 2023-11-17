@@ -30,7 +30,11 @@
   
   .header-buttons {
     grid-row: 2;
-    
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+
+
     opacity: 0;
     animation: fadeIn 1s ease-out 1.2s forwards;
     transition-delay: 0.5s;

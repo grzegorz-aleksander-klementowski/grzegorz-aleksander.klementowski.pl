@@ -1,6 +1,6 @@
 function typeWriter(element, text, speed) {
   let index = 0;
-  element.innerHTML = ''; // Upewnij się, że element jest pusty przed rozpoczęciem pisania
+  element.innerHTML = ''; // Be sure the element is empty before start writting. 
   function writeText() {
     if (index < text.length) {
       let char = text.charAt(index);
@@ -104,7 +104,7 @@ function scrollToClass(className) {
   }
 }
 
-// Funkcja do znajdowania aktualnej sekcji
+// Function for finding particular section
 function getCurrentSectionIndex() {
   const scrollPosition = window.pageYOffset;
   const sections = sectionClasses.map(className => document.querySelector('.' + className));
@@ -126,9 +126,9 @@ function getCurrentSectionIndex() {
   return closestSectionIndex;
 }
 
-// Funkcja do obsługi zdarzenia przewijania kółkiem myszy
+// Function for mouse scrolling event 
 const onWheelEvent = (event) => {
-  // Pobranie aktualnego indeksu sekcji
+  // giving actual section index
   let currentSectionIndex = getCurrentSectionIndex();
 
   // `deltaY` wskazuje kierunek przewijania:
@@ -253,7 +253,7 @@ let touchStartY = 0;
 let touchEndY = 0;
 let touchStartTime = 0;
 
-const someThreshold = 0.3 // value that has to be defined. Define strong of hold/move of touch.
+const someThreshold = 0.2 // value that has to be defined. Define strong of hold/move of touch.
 
 
 window.addEventListener('touchstart', function(event) {
