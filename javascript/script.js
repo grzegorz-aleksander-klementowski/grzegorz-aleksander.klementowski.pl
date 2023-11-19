@@ -1,6 +1,6 @@
 function typeWriter(element, text, speed) {
   let index = 0;
-  element.innerHTML = ''; // Be sure the element is empty before start writting. 
+  element.innerHTML = ''; // Upewnij się, że element jest pusty przed rozpoczęciem pisania
   function writeText() {
     if (index < text.length) {
       let char = text.charAt(index);
@@ -104,7 +104,7 @@ function scrollToClass(className) {
   }
 }
 
-// Function for finding particular section
+// Funkcja do znajdowania aktualnej sekcji
 function getCurrentSectionIndex() {
   const scrollPosition = window.pageYOffset;
   const sections = sectionClasses.map(className => document.querySelector('.' + className));
@@ -126,9 +126,9 @@ function getCurrentSectionIndex() {
   return closestSectionIndex;
 }
 
-// Function for mouse scrolling event 
+// Funkcja do obsługi zdarzenia przewijania kółkiem myszy
 const onWheelEvent = (event) => {
-  // giving actual section index
+  // Pobranie aktualnego indeksu sekcji
   let currentSectionIndex = getCurrentSectionIndex();
 
   // `deltaY` wskazuje kierunek przewijania:
