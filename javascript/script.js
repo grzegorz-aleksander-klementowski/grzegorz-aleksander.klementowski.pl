@@ -1,6 +1,6 @@
 function typeWriter(element, text, speed) {
   let index = 0;
-  element.innerHTML = ''; // Upewnij się, że element jest pusty przed rozpoczęciem pisania
+  element.innerHTML = ''; // Be sure the element is empty before start writting. 
   function writeText() {
     if (index < text.length) {
       let char = text.charAt(index);
@@ -35,11 +35,11 @@ function handleHamburgerClick() {
     if (navLinks.classList.contains('show-menu')) {
         navLinks.classList.add('hide-menu');
         setTimeout(function() {
-            navLinks.style.display = 'none';
+            /* navLinks.style.display = 'none'; */
         }, 1000); // animation time 
         navLinks.classList.remove('show-menu');
     } else {
-        navLinks.style.display = 'grid';
+        /* navLinks.style.display = 'grid'; */
         navLinks.classList.add('show-menu');
         navLinks.classList.remove('hide-menu');
     }
@@ -74,14 +74,18 @@ document.addEventListener('DOMContentLoaded', revealOnScroll);
   
 
 
-
+/*
+ *
 //funkcja przesuwa ekran do klasy
 function scrollToClass(className) {
+	console.log("scrollToClass servis for: ", className);
     const element = document.querySelector('.' + className);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   }
+
+*/
 
 
 
@@ -96,15 +100,75 @@ const sectionClasses = [
   'footer-index'
 ];
 
+
+
+
+function smoothScrollTo(element) {
+    const startPosition = window.pageYOffset;
+    const endPosition = element.getBoundingClientRect().top;
+    const startTime = performance.now();
+
+    function scrollStep(currentTime) {
+        const elapsedTime = currentTime - startTime;
+        const progress = Math.min(elapsedTime / 500, 1); 
+
+        window.scrollTo(0, startPosition + (endPosition * progress));
+
+        if (progress < 1) {
+            window.requestAnimationFrame(scrollStep);
+        }
+    }
+
+    window.requestAnimationFrame(scrollStep);
+}
+
+function scrollToClass(className) {
+	console.log('Scrolling to:', className);
+	const element = document.querySelector('.' + className);
+	const isFirefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
+	if (element) {
+		console.log("Element==true");
+		if (isFirefox) {
+			element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+		} else {
+			smoothScrollTo(element);
+		}
+	}
+	else{
+		console.log("element!=true; element==false");
+	}
+}
+
+
+/*
+//funkcja, która sprawdza, czyjesteśmy bliżej klasy .A, czy klasy .B.
+function scrollToClass(className) {
+	// Logika przewijania do danej klasy
+	console.log('Scrolling to:', className);
+	// Przykładowo, użyjemy 'scrollIntoView' dla elementu
+	const element = document.querySelector('.' + className);
+	if (element) {
+		console.log("Element==true");
+		
+		/* element.scrollIntoView({ behavior: 'smooth', block: 'start'}); 
+		 element.scrollIntoView({ block: 'start'}); 
+	}
+	else{
+		console.log("element!=true; element==false");
+	}
+}
+*/
+/*
 // Function to scrooll to particular class
 function scrollToClass(className) {
+	console.log("scrollToClass service for 2: ", className);
   const element = document.querySelector('.' + className);
   if (element) {
     element.scrollIntoView({ behavior: 'smooth' });
   }
 }
-
-// Funkcja do znajdowania aktualnej sekcji
+*/
+// Function for finding particular section
 function getCurrentSectionIndex() {
   const scrollPosition = window.pageYOffset;
   const sections = sectionClasses.map(className => document.querySelector('.' + className));
@@ -126,30 +190,33 @@ function getCurrentSectionIndex() {
   return closestSectionIndex;
 }
 
-// Funkcja do obsługi zdarzenia przewijania kółkiem myszy
+// Function for mouse scrolling event 
 const onWheelEvent = (event) => {
-  // Pobranie aktualnego indeksu sekcji
-  let currentSectionIndex = getCurrentSectionIndex();
+	// giving actual section index
+	let currentSectionIndex = getCurrentSectionIndex();
 
-  // `deltaY` wskazuje kierunek przewijania:
-  // dodatni wartości `deltaY` oznaczają przewijanie w dół
-  if (event.deltaY > 0) {
-    console.log('Przewijanie w dół');
-    // Przesuń do klasy pod aktualnym indeksem, o ile nie jest to ostatnia sekcja
-    if (currentSectionIndex < sectionClasses.length - 1) {
-      scrollToClass(sectionClasses[currentSectionIndex + 1]);
-    }
-  } else {
-    console.log('Przewijanie w górę');
-    // Przesuń do klasy nad aktualnym indeksem, o ile nie jest to pierwsza sekcja
-    if (currentSectionIndex > 0) {
-      scrollToClass(sectionClasses[currentSectionIndex - 1]);
-    }
+	// `deltaY` wskazuje kierunek przewijania:
+	// dodatni wartości `deltaY` oznaczają przewijanie w dół
+	if (event.deltaY > 0) {
+		console.log('Przewijanie w dół');
+	// Przesuń do klasy pod aktualnym indeksem, o ile nie jest to ostatnia sekcja
+	if (currentSectionIndex < sectionClasses.length - 1) {
+		scrollToClass(sectionClasses[currentSectionIndex + 1]);
+	}
+	} else {
+		console.log('Przewijanie w górę');
+		// Przesuń do klasy nad aktualnym indeksem, o ile nie jest to pierwsza sekcja
+	if (currentSectionIndex > 0) {
+		scrollToClass(sectionClasses[currentSectionIndex - 1]);
+	}
   }
 };
 
 // Dodanie nasłuchiwania na zdarzenie przewijania kółkiem
-document.addEventListener('wheel', onWheelEvent);
+
+document.addEventListener('wheel', onWheelEvent); 
+
+/* document.addEventListener('wheel', onWheelEvent, { passive: false }); */
 
 
 
@@ -161,17 +228,6 @@ document.addEventListener('wheel', onWheelEvent);
 
 
 
-
-//funkcja, która sprawdza, czyjesteśmy bliżej klasy .A, czy klasy .B.
-function scrollToClass(className) {
-  // Logika przewijania do danej klasy
-  console.log('Przewijanie do:', className);
-  // Przykładowo, użyjemy 'scrollIntoView' dla elementu
-  const element = document.querySelector('.' + className);
-  if (element) {
-    element.scrollIntoView({ behavior: 'smooth' });
-  }
-}
 
 // Funkcja, która sprawdza, który element jest bliżej środka ekranu.
 function findCloserElement() {
@@ -285,7 +341,5 @@ function handleTouchEnd() {
     findCloserElement();   }
   else findCloserElement();
 }
-
-
 
 

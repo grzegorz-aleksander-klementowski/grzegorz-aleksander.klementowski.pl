@@ -17,6 +17,10 @@
   font-style: normal;
 }
 
+html, body, * { 
+      scroll-behavior: smooth;
+    }
+
 
 body {
   margin: 0;
@@ -54,6 +58,7 @@ button {
 strong {
   font-weight: 800;
 }
+
 
 header {
   position: relative;
