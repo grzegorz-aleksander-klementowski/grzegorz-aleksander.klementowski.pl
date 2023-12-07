@@ -2,40 +2,36 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>Grzegorz Aleksander Klementowski - MIS</title>
+		<title>Games dev: Unity, JS</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="Grzegorz Aleksander Klementowski - specjalista IT. Odkryj moje portfolio z programowania, zarządzania systemami informacyjnymi, procesami biznesowymi i projektami w języku Rust.">
 		<meta name="keywords" content="Grzegorz Aleksander Klementowski, IT portfolio, Programming expertise, MIS specialist, Business process management, Rust programmer">
 		<!-- CSS styles -->
-		<link rel="stylesheet" href="./css/project-sites.css">
+		<link rel="stylesheet" href="./css/pages.css">
 		<link rel="stylesheet" href="./css/nav.css">
+		<link rel="stylesheet" href="./css/responsive.css">
+		<link rel="stylesheet" href="./css/footer.css">
 		<!-- Java Script -->
 		<script src="./javascript/script.js" defer></script>
 		<!-- inne -->
 		<link rel="icon" href="./img/GAK-MIS_logo-no-bg.png" type="image/png">
 	</head>
-	<body">
-	<script>
-        window.onload = function() {
-            alert("This website is still under construction.");
-        };
-    </script>
-		<!-- I wrote the code by myself. I love simplisity complex redution and safe capacity. -->
-		<!-- Stay positive! :) -->
+	<body class="scroll-container">
+		
 		<header class="header-project-site">
 			<nav>
 				<div class="nav-container">
-				  	<a onclick="scrollToClass('header-index')" class="nav-logo">
+				  	<a href="index.html" class="nav-logo">
 						<Span class="names">Grzegorz Aleksander</Span>
 						<span class="surname">Klementowski</span>
 					</a>
 				  	<div class="nav-links hide-menu">
 						<span onclick="handleHamburgerClick()">x</span>
-						<a onclick="scrollToClass('header-index'); handleHamburgerClick();">Home</a>
-						<a onclick="scrollToClass('main-presentation'); handleHamburgerClick();">About</a>
-						<a onclick="scrollToClass('hero-skills'); handleHamburgerClick();">Portfolio</a>
-						<a onclick="scrollToClass('curriculum-vitae'); handleHamburgerClick();">Competencies</a>
-						<a onclick="scrollToClass('footer-index'); handleHamburgerClick();">Contact</a>
+						<a href="index.html">Home</a>
+						<a href="index.html#about">About</a>
+						<a href="index.html#portfolio">Portfolio</a>
+						<a href="index.html#competencies">Competencies</a>
+						<a href="index.html#contact">Contact</a>
 
 						<div class="nav-social-links">
 							<a href="https://www.facebook.com/GrzegorzAleksanderKlementowski/" target="_blank">
@@ -63,22 +59,40 @@
 				</div>				
 			</nav>
 			<div class="header-hero">
-				<h1 class="typewriter">PHP+MySQL Shopping cards project</h1>
+				<h1>Unity C# and JavaScript games</h1>
 			</div>
 			<div class="description">
-				<p>This is my project from 2018 for one of local restaurant...</p>	
+				<p>Example of my games. First game created in unity, showing way of used mechanics. Second game written in Java Script. <a target="_blank" href="https://github.com/grzegorz-aleksander-klementowski/scaffold_game/">JS game GitHub project site</a>.</p>
+				<ul>
+					<li><b>Game 1: Unity C#</b></li>
+					<li><b>Game 2: Java Script</b></li>
+
+				</ul>
+				<h3>Table of content:</h3>
+				<ul>
+					<li><a href="#video-presentation">Unity C# game video presentation</a></li>
+					<li><a href="#javascript-game-description">JavaScript game</a></li>
+				</ul>
 			</div>
 		</header>
 		
-		  <main>
-			<section>
-				
+		<main>
+			<section id="video-presentation">
+				<h2>Video presentation of Unity project:</h2>
+				<iframe src="https://drive.google.com/file/d/1-zLw0cHsG8zUvvtuNnjArRAM7GNleL6t/preview" allow="autoplay"></iframe>
 			</section>
 			<section>
-				
+				<h2 id="javascript-game-description">Java script game</h2> 
+				<p>Short and simple scaffold game written in Java Script. "Guess the password!" You can change passwords from JS file (5. line). Inspired by Mirosław Zelent (Pasja Informatyki).</p>
 			</section>
-		  </main>		
-		  <footer class="footer-index">
+			<section id="project-img-presentations">
+				<h2>JS game screenshots</h2>
+				<img src="./img/presentation/JS-game/1.png">
+				<img src="./img/presentation/JS-game/2.png">
+			</section>
+		</main>	
+
+		<footer class="footer-index">
 			<div class="content-container reveal">
 			  <div class="ending-info">
 				<h2>I'm waiting for contact with you!</h2>
@@ -108,7 +122,7 @@
 			  </div>
 		  
 			</div>
-		  </footer>
+		</footer>
 		  
 
 	</body>
