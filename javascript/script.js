@@ -131,7 +131,9 @@ function scrollToClass(className) {
 		if (isFirefox) {
 			element.scrollIntoView({ behavior: 'smooth', block: 'start' });
 		} else {
-			smoothScrollTo(element);
+			/* smoothScrollTo(element); */
+			element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
 		}
 	}
 	else{
