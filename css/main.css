@@ -5,14 +5,48 @@
     color: #cecece;
     font-size: larger;
   }
-  
+
+.main-text-presentation {
+	overflow: auto;
+	max-height: 80vh;
+}
+
+/* slider customization of main-text-presentation, webKit-based browsers (Chrome, Safari) */
+
+        .main-text-presentation::-webkit-scrollbar {
+            width: 3px;
+        }
+
+        .main-text-presentation::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .main-text-presentation::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 6px;
+        }
+
+        .main-text-presentation::-webkit-scrollbar-thumb:hover {
+            background: rgba(255, 255, 255, 0.7);
+        }
+
+
+
   .main-presentation .main-picture-presentation {
     grid-column: 2;
   }
   
+ .main-picture-presentation {
+	 border-radius: 50%;
+	 overflow: hidden;
+	 max-height: 57%;
+	 max-width: 57%;
+ }
+
   .main-picture-presentation img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
   }
   
   /* MAI INDEX HERO SKILLS */
@@ -185,4 +219,10 @@ main > section.curriculum-vitae > .content-container .interests-and-aspirations 
 
 main > section.curriculum-vitae > .content-container .interests-and-aspirations p {
   line-height: 1.6;
+}
+
+main > section .soft-skills, .key-competencies {
+    max-height: 40vh; /* Możesz dostosować wysokość według swoich potrzeb */
+    overflow: auto;
+    padding-right: 10px; /* Opcjonalnie, aby pasek przewijania nie zasłaniał treści */
 }
