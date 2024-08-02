@@ -184,10 +184,12 @@ main > section.curriculum-vitae > .content-container .soft-skills-list {
   margin: 0;
   text-align: center;
 
-  display: grid;
+  /*
+  display: grid; 
   grid-template-columns: 1fr;
   grid-template-rows: 4fr;
   grid-gap: 20px;
+  */
 }
 
 main > section.curriculum-vitae > .content-container .soft-skills-list li {
@@ -204,6 +206,7 @@ main > section.curriculum-vitae > .content-container .soft-skills-list li {
   overflow: hidden;
   height: 40px;
   cursor: pointer;
+  width: 100%;
 }
 
 main > section.curriculum-vitae > .content-container .soft-skills-list li:hover {
