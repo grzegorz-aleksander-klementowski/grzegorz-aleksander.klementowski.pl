@@ -16,7 +16,7 @@
     	}
 
 	.nav-toggle:hover {
-			cursor: pointer;
+		cursor: pointer;
 	}
 
 
@@ -149,7 +149,7 @@ main > section .main-text-presentation  {
 
 	main > section.curriculum-vitae > .content-container {
 			grid-template-columns: 1fr;
-			grid-template-rows: 1fr 2fr 2fr 1fr;
+			grid-template-rows: 1fr 2fr 1fr;
 	}
 
 
@@ -175,8 +175,8 @@ main > section .main-text-presentation  {
 	}
 		
 	main > section.curriculum-vitae > .content-container .soft-skills-list li{
-			margin: 0;	
-			padding: 5px;
+			margin: 2vh 0;	
+			padding: 2vh 5%;
 	}
 
 	main > section.curriculum-vitae > .content-container .soft-skills-list {

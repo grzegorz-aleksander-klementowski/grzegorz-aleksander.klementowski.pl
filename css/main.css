@@ -192,6 +192,13 @@ main > section.curriculum-vitae > .content-container .soft-skills-list {
   */
 }
 
+main > section.curriculum-vitae > .content-container .list-of-skills {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
+	grid-gap: 10vw;
+} 
+
 main > section.curriculum-vitae > .content-container .soft-skills-list li {
   background: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -206,7 +213,7 @@ main > section.curriculum-vitae > .content-container .soft-skills-list li {
   overflow: hidden;
   height: 40px;
   cursor: pointer;
-  width: 100%;
+  width: 92%;
 }
 
 main > section.curriculum-vitae > .content-container .soft-skills-list li:hover {
@@ -227,5 +234,6 @@ main > section.curriculum-vitae > .content-container .interests-and-aspirations 
 main > section .soft-skills, .key-competencies {
     max-height: 40vh; /* Możesz dostosować wysokość według swoich potrzeb */
     overflow: auto;
-    padding-right: 10px; /* Opcjonalnie, aby pasek przewijania nie zasłaniał treści */
+    /* padding-right: 10px; 	--- Opcjonalnie, aby pasek przewijania nie zasłaniał treści */
+    padding-top: 10px;
 }
