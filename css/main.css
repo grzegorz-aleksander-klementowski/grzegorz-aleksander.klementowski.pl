@@ -231,9 +231,16 @@ main > section.curriculum-vitae > .content-container .interests-and-aspirations 
   line-height: 1.6;
 }
 
+/*
 main > section .soft-skills, .key-competencies {
-    max-height: 40vh; /* Możesz dostosować wysokość według swoich potrzeb */
+    max-height: 40vh; Możesz dostosować wysokość według swoich potrzeb
     overflow: auto;
-    /* padding-right: 10px; 	--- Opcjonalnie, aby pasek przewijania nie zasłaniał treści */
-    padding-top: 10px;
+    padding-right: 10px; 	--- Opcjonalnie, aby pasek przewijania nie zasłaniał treści
+	padding-top: 10px;
+}
+*/
+
+main > section .soft-skills ul {
+	overflow: auto;
+	max-height: 40vh;
 }
