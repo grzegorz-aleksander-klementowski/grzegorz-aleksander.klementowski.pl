@@ -213,7 +213,7 @@ main > section.curriculum-vitae > .content-container .soft-skills-list li {
   overflow: hidden;
   height: 40px;
   cursor: pointer;
-  width: 92%;
+  width: 90%;
 }
 
 main > section.curriculum-vitae > .content-container .soft-skills-list li:hover {
