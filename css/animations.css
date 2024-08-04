@@ -2,6 +2,10 @@
 /*table of contents in style.css (main style file*/
 
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* TEXT */
 
 .text-link:hover {
