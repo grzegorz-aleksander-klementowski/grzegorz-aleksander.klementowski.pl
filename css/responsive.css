@@ -143,7 +143,11 @@ main > section .main-text-presentation  {
 	
 	main > section.hero-skills .projects {
 		height: 95%;
-		grid-template-columns: repeat(1, 1fr);
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	main > section.hero-skills .projects .project > .project-icons-cover {
+		padding: 0 2%;
 	}
 
 	main > section.hero-skills .projects .project > .project-icons-cover {
