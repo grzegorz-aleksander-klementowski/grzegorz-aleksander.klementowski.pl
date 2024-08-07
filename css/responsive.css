@@ -307,12 +307,9 @@ main > section .main-text-presentation  {
 		/* main-presentation */
 		
 		
-		
-		
-
-		/*main > section.main-presentation .main-text-presentation {
-				/*font-size: 2vh;
-		}*/
+		main > section.hero-skills .projects {
+		grid-template-columns: repeat(1, 1fr);
+	}
 
 		main > section.main-presentation p {
 				margin: 5px 0 0 0;
