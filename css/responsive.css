@@ -1,11 +1,5 @@
-
   /* Styl dla ekranów w orientacji pionowej */
 @media screen and (orientation: portrait) {
-
-	
-
-
-
 	/* INDEX NAV */
 	.nav-links {
       		display:block; /* ukryj linki na małych ekranach */
@@ -18,7 +12,6 @@
 	.nav-toggle:hover {
 		cursor: pointer;
 	}
-
 
  	/* toggled-nav-appered */ 
 	nav > .nav-container > .nav-links {
@@ -62,9 +55,6 @@
 	nav > .nav-container > .nav-links > a:nth-child(5) {grid-row: 5;}
 	nav > .nav-container > .nav-links > a:nth-child(6) {grid-row: 6;}
 	nav > .nav-container > .nav-links > div:nth-child(7) {grid-row: 7;}
-
-
-
 
 	nav > .nav-container > .show-menu {
 			display: grid;
@@ -163,7 +153,6 @@ main > section .main-text-presentation  {
 			grid-gap: 2%;
 	}
 
-
 	main > section.curriculum-vitae > .content-container > :nth-child(1) {
 			grid-column: 1;
 			grid-row: 1;
@@ -173,7 +162,6 @@ main > section .main-text-presentation  {
 			grid-column: 1;
 			grid-row: 2;
 	}
-
 
 	main > section.curriculum-vitae > .content-container > :nth-child(3) {
 			grid-column: 1;
@@ -421,12 +409,7 @@ main > section .main-text-presentation  {
 
 }
 
-
 @media screen and (orientation: portrait) and (max-width: 815px) and (min-height: 900px) {
-
-	main > section.main-presentation .main-text-presentation {
-	/*	font-size: 0.9em;*/
-	}
 	
 	main > section.curriculum-vitae > .content-container {
 		grid-template-rows: 1fr 2fr 2fr 1fr;
@@ -467,16 +450,9 @@ main > section .main-text-presentation  {
 	main > section.curriculum-vitae > .content-container .soft-skills-list li {
 		height:auto;
 	}
-
-
 } 
 
-
 /* LANDSCAPE */
-
-
-
-
 
 
 @media (max-width: 1600px) and (orientation: landscape)  {
@@ -489,18 +465,12 @@ main > section .main-text-presentation  {
 
 }
 
-
 @media screen and (max-width: 1800px) and (orientation: landscape)  {
-
 
 	.content-container {
     		margin: 0 5%; 
 	}
-
-
 }
-
-
 
 /* Duże monitory */
 @media (max-width: 1441px) {
@@ -511,16 +481,9 @@ main > section .main-text-presentation  {
 
 }
 
-
-
-
-
-
 @media screen and (max-height: 500px) and (max-width: 1000px) and (orientation: landscape) {
 	
 	/* NAV */
-	
-	
 
 	.nav-container {
 		padding: 0 5%;
@@ -563,8 +526,6 @@ main > section .main-text-presentation  {
 	}
 
 	/* HEADER */
-
-
 
 	.header-hero {
 		width: 100vw;
@@ -728,15 +689,10 @@ main > section .main-text-presentation  {
 		font-size: 1em;
 		margin: 3px;
 	}
-
-
 }
-
-
 
 /* Responsywność od 481px do 768px szerokości */
 @media screen and (max-width: 768px) and (orientation: landscape) {
-    
     	
     	/* INDEX FOOTER */
     	.footer-index .contact {
@@ -762,17 +718,13 @@ main > section .main-text-presentation  {
       		display: block;
       		margin: 10px auto; 
 	}
-
-
 }
-  
 
 @media (max-width: 1200px) and (orientation: landscape) {
 
 	body {
       
     	}
-
 }
 
 /* Laptopy i małe monitory */
@@ -897,8 +849,4 @@ main > section .main-text-presentation  {
 		justify-items: center;
     		align-items: end;
 	}
-	
-
 }
-
-
