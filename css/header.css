@@ -60,7 +60,6 @@
     color: #cecece;
   }
 
- 
   .header-buttons button {
     border: none;
     width: 200px; 
@@ -85,7 +84,7 @@
   
   .header-buttons button:nth-child(1) {
     background: #cecece;
-    color: #;
+/*    color: #; */
     border-radius: 20px 5px; /* asymetryczne zaokrąglenia: 20px w lewym górnym i prawym dolnym rogu, 5px w prawym górnym i lewym dolnym rogu */
   }
   
@@ -95,8 +94,6 @@
     border-radius: 5px 20px; /* asymetryczne zaokrąglenia: 5px w lewym górnym i prawym dolnym rogu, 20px w prawym górnym i lewym dolnym rogu */
   }
   
-  
   @media (max-width: 768px) {
     /* ... Responsywność i inne style już zdefiniowane ... */
   }
-  
