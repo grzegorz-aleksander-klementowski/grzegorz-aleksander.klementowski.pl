@@ -35,8 +35,6 @@
         grid-row: 1/3;
     }
 
-
-
     .profile-photo img {
         width: 100px;
         height: 100px;
@@ -110,7 +108,6 @@
 }
 
 @media screen and (max-width: 1200px) {
-
     main {
         margin: 10px;
     }
