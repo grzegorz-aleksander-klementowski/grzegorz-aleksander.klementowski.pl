@@ -21,8 +21,6 @@ nav {
     /* max-width: 1200px; */
     height: 70px;
     margin: 0 auto;
-
-    
   }
   
   .nav-container img {
@@ -77,8 +75,6 @@ nav a {
   .nav-links a:hover {
     color: #fff; /* jasnozielony kolor po najechaniu */
   }
-
-
 
 	/* Hamburger */
   
