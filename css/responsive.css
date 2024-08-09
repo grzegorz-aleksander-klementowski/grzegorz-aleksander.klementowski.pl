@@ -98,7 +98,10 @@
 		height: 75%;
 		margin: 50px 0 0 0;
 	}
-	
+
+	main > section {
+  			align-items: normal;
+		}
 	main > section.main-presentation {
 			align-items: center;
 	}
@@ -290,7 +293,7 @@ main > section .main-text-presentation  {
 		/* MAIN */
 
 		main > section {
-  			align-items: center;
+  			align-items: normal;
 		}
 
 		.content-container {
