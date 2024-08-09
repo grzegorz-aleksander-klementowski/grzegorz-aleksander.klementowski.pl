@@ -103,7 +103,7 @@
   			align-items: normal;
 		}
 	main > section.main-presentation {
-			align-items: center;
+			align-items: normal;
 	}
 
 	main > section.main-presentation > .content-container {
@@ -125,7 +125,7 @@ main > section .main-text-presentation  {
 
 	.main-picture-presentation {
 		max-height: 250px;
-		max-width: 250px;
+		max-width: 50%;
 	}
 
 	main section.main-presentation img {
