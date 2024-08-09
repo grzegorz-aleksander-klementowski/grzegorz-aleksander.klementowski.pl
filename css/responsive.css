@@ -123,7 +123,6 @@ main > section .main-text-presentation  {
 		max-height: 250px;
 		max-width: 250px;
 	}
-	}
 
 	main section.main-presentation img {
 			width: 100%;
@@ -133,7 +132,8 @@ main > section .main-text-presentation  {
 	
 	main > section.hero-skills .projects {
 		height: 95%;
-		grid-template-columns: repeat(3, 1fr);
+		grid-template-columns: repeat(2, 1fr);
+		overflow: auto;
 	}
 
 	main > section.hero-skills .projects .project > .project-icons-cover {
